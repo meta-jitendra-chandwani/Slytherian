@@ -14,6 +14,8 @@ import { SearchCustomersComponent } from './search-customers/search-customers.co
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NgPrimeModule } from './ng-prime.module';
+import { AdditionalEffortsComponent } from './additional-efforts/additional-efforts.component';
+import { AppraiseDashboardComponent } from './appraise-dashboard/appraise-dashboard.component';
 import { RetrospectiveNotesComponent } from './retrospective-notes/retrospective-notes.component';
 
 
@@ -25,6 +27,8 @@ import { RetrospectiveNotesComponent } from './retrospective-notes/retrospective
     CustomerDetailsComponent,
     CustomersListComponent,
     SearchCustomersComponent,
+    AdditionalEffortsComponent,
+    AppraiseDashboardComponent
     RetrospectiveNotesComponent
   ],
   imports: [

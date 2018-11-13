@@ -25,14 +25,14 @@
 </div> -->
 
 
-<body class="sidenav-closed">
+<body [ngClass]="toggleNavigationBar ? 'sidenav-closed': ''">
   <!-- loading layout replaced by app after startupp -->
-  <!-- <div class="app-loading">
+  <div class="app-loading" *ngIf="loader">
     <div class="logo"></div>
     <svg class="spinner" viewBox="25 25 50 50">
       <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
     </svg>
-  </div> -->
+  </div>
   <!--header UI START-->
   <header class="domain-admin__header">
     <div class="row">
@@ -47,15 +47,9 @@
         </ul>
       </div>
       <div class="col-sm user-profile__container">
-        <!-- <div class="notification__container">
-          <i class="far fa-bell"></i>
-          <span class="notification-text">Notifications</span>
-          <span class="badge badge-pill badge-primary">11</span>
-        </div> -->
-
         <div class="user-profile" (click)="menu.toggle($event)">
           <span class="thumb-sm profile-button-md">
-            <img class="img-fluid" src="img\default_avatar.png" />
+            <img class="img-fluid" src="../../assets/default_avatar.png" />
           </span>
           <span class="user-info">
             Hi
@@ -64,7 +58,6 @@
           </span>
 
         </div>
-        <!-- <p-menu #menu [popup]="true" appendTo="body" [model]="items"></p-menu> -->
 
       </div>
     </div>
@@ -102,66 +95,10 @@
       </ul>
     </section>
   </nav>
-  <!--header UI END-->
 
-  <div id="main-block">
-    <div class="container-fluid">
-      <div class="main_block learing_table">
 
-        <div class="row">
-          <div class="col-12">
-            <p class="title">
-              <i class="fas fa-user-tie mr-2"></i> Details of additional efforts beyond the planned goals?</p>
-          </div>
-        </div>
-        <table class="table mt-2 table-bordered border-bottom-0">
-          <thead>
-            <tr>
-              <th scope="col" *ngFor="let header of tableHeader">{{header}}</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr *ngFor="let field of fieldArray">
-              <td>
-                <div class="form-group">
-                  <!-- <p-dropdown class="form-control" [options]="timelinesItemList" [(ngModel)]="field.selectedTimeline"></p-dropdown> -->
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option *ngFor="let timeline of timelinesItemList">{{timeline.timelinePeriod}}</option>
-                    <!-- <option>Classrom training sessions or seminars attended</option>
-                    <option>Webinars attended</option>
-                    <option>Technical articles read</option>
-                    <option>Online courses completed</option>
-                    <option>Professional books read</option>
-                    <option>Others</option> -->
-                  </select>
-                </div>
-              </td>
-              <td>
-                <input type="text" class="form-control" name="Hours" placeholder="Devoted Hours">
-              </td>
-              <td>
-                <input type="text" class="form-control" name="Activity" placeholder="Activity">
-              </td>
-              <td>
-                <input type="text" class="form-control" name="Details" placeholder="Details">
-              </td>
-              <td class="group_btn">
-                <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
-                  <i class="fas fa-trash-alt"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="5" class="border-0 p-0">
-                <div class="col-sm text-right p-0">
-                  <a class="text-dark" (click)="addRow()">
-                    <i class="text-success fas fa-plus-square plusBtn"></i>
-                  </a>
-                </div>
-              </td>
-            </tr>
-
+  <app-additional-efforts></app-additional-efforts>
+  <app-appraise-dashboard></app-appraise-dashboard>
           </tbody>
         </table>
         <div class="col-sm-12 buttons-row text-right p-0">
