@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { timelines } from './timelines';
 import { appraise } from './appraise';
+import { achievements } from './achievement-names';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -14,6 +15,7 @@ export class CustomerService {
   private baseUrl = 'http://localhost:8080/api/customers';
   private timeUrls = 'http://localhost:3000/timelines';
   private appraiseUrls =  'http://localhost:3001/appraise';
+  private achievementUrls = 'http://localhost:3000/achievements';
   constructor(private http: HttpClient) { }
 
   getTimelines(): Observable<timelines[]> {
@@ -24,12 +26,22 @@ export class CustomerService {
     return this.http.get<appraise[]>(this.appraiseUrls);
   }
 
+  getAchievements(): Observable<achievements[]> {
+    debugger
+    return this.http.get<achievements[]>(this.achievementUrls);
+  }
+
+  constructor(private http: HttpClient) { }
+
+  getTimelines(): Observable<timelines[]> {
+    return this.http.get<timelines[]>(this.timeUrls);
+  }
+
   getCustomer(id: number): Observable<Object> {
     return this.http.get(`${this.baseUrl}/${id}`);
   }
 
   createCustomer(customer: Object): Observable<Object> {
-    debugger
     return this.http.post(`${this.baseUrl}` + `/create`, customer);
   }
 
