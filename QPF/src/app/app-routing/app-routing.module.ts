@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AchievementsComponent } from '../achievements/achievements.component';
+import { CustomersListComponent } from '../customers-list/customers-list.component';
+import { CreateCustomerComponent } from '../create-customer/create-customer.component';
+import { SearchCustomersComponent } from '../search-customers/search-customers.component';
  
 const routes: Routes = [
     { path: '', redirectTo: 'customer', pathMatch: 'full' },
-    { path: 'customer', component: AchievementsComponent }
+    { path: 'customer', component: CustomersListComponent },
+    { path: 'add', component: CreateCustomerComponent },
+    { path: 'findbyage', component: SearchCustomersComponent },
 ];
  
 @NgModule({
