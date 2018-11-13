@@ -1,0 +1,46 @@
+{
+    "timelines": [
+        {
+            "id": 0,
+            "timelinePeriod": "Week : Oct 1"
+        },
+        {
+            "id": 1,
+            "timelinePeriod": "Week : Oct 8"
+        },
+        {
+            "id": 2,
+            "timelinePeriod": "Week : Oct 15"
+        },
+        {
+            "id": 3,
+            "timelinePeriod": "Week : Oct 22"
+        },
+        {
+            "id": 4,
+            "timelinePeriod": "Week : Oct 29"
+        },
+        {
+            "id": 5,
+            "timelinePeriod": "Week : Oct 1"
+        }
+    ],
+    "achievements":[
+        {
+            "id": 0,
+            "name": "None"
+        },
+        {
+            "id": 1,
+            "name": "Got appreciation mail from client"
+        },
+        {
+            "id": 2,
+            "name": "Elevated to higher role"
+        },
+        {
+            "id": 3,
+            "name": "Got more responsibilities"
+        }
+    ]
+}

@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { NgPrimeModule } from './ng-prime.module';
+import { AchievementsComponent } from './achievements/achievements.component';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { CustomersListComponent } from './customers-list/customers-list.component';
@@ -16,6 +20,7 @@ import { RetrospectiveNotesComponent } from './retrospective-notes/retrospective
 @NgModule({
   declarations: [
     AppComponent,
+    AchievementsComponent
     CreateCustomerComponent,
     CustomerDetailsComponent,
     CustomersListComponent,
