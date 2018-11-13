@@ -1,0 +1,80 @@
+<h1>Customers</h1>
+
+<div *ngFor="let customer of customers | async" style="width: 300px;">
+  <customer-details [customer]='customer'></customer-details>
+</div>
+
+<div>
+  <button type="button" class="button btn-danger" (click)='deleteCustomers()'>Delete All</button>
+</div>
+
+
+<p-table [value]="fieldArray">
+  <ng-template pTemplate="header">
+    <tr>
+      <th *ngFor="let header of tableHeader">{{header}}</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-field>
+    <tr>
+      <td>
+        <p-radioButton name="groupname" value="val1" [(ngModel)]="selectedValue"></p-radioButton>
+      </td>
+      <td>
+        {{field.year}}
+        <!-- <p-dropdown [options]="timelinesItemList" [(ngModel)]="field.selectedTimeline"></p-dropdown>
+            <button (click)="show(field.selectedTimeline)">Value</button> -->
+      </td>
+      <td>
+        {{field.quarter}}
+        <!-- <p-dropdown [options]="achievmentsList" [(ngModel)]="field.selectedAchievement"></p-dropdown> -->
+      </td>
+      <td>
+        {{field.quarter}}
+        <!-- <button pButton type="button" label="Click" (click)="handleClick()" style="background-color: green"></button>
+            <p-button label="Click" (onClick)="handleClick()"></p-button> -->
+      </td>
+      <td>
+        {{field.schedulePublishDate}}
+        <!-- <p-calendar [(ngModel)]="value"></p-calendar>
+            <p-calendar [(ngModel)]="dateValue" [minDate]="minDateValue" [maxDate]="maxDateValue" [readonlyInput]="true" [numberOfMonths]="3"></p-calendar> -->
+      </td>
+      <td>
+        {{field.scheduleLockDate}}
+      </td>
+      <td>
+        {{field.totalEmployee}}
+      </td>
+      <td>
+        {{field.status}}
+      </td>
+
+      <td class="group_btn">
+        <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </td>
+      <!-- <button pButton type="button" (click)="deleteRow(field)">v</button> -->
+    </tr>
+
+  </ng-template>
+  <tr>
+    <td colspan="4" class="border-0 p-0">
+      <div class="col-sm text-right p-0">
+        <a href="" class="text-dark" (click)="addRow()">
+          <i class="text-success fas fa-plus-square plusBtn"></i>
+        </a>
+      </div>
+    </td>
+  </tr>
+</p-table>
+<!-- <button pButton label="Add Row"></button> -->
+
+
+
+
+
+
+
+
+
