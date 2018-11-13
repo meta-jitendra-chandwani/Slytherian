@@ -15,7 +15,6 @@ export class CustomerService {
   constructor(private http: HttpClient) { }
 
   getTimelines(): Observable<timelines[]> {
-    debugger
     return this.http.get<timelines[]>(this.timeUrls);
   }
 
@@ -24,7 +23,6 @@ export class CustomerService {
   }
 
   createCustomer(customer: Object): Observable<Object> {
-    debugger
     return this.http.post(`${this.baseUrl}` + `/create`, customer);
   }
 
