@@ -24,7 +24,7 @@ export class AchievementsComponent implements OnInit {
   timelines: timelines[];
   fieldArray = [];
 
-  tableHeader = ["Timeline", "My Achievement", "Summary", "Details", ""];
+  tableHeader = ["Timeline", "My Achievement", "Summary", "Details", "Action"];
 
   constructor(private customerService: CustomerService) {
     this.fieldArray = [{}]

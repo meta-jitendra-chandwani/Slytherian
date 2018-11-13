@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-12">
           <p class="title">
-            <i class="fas fa-user-tie mr-2"></i> Details of additional efforts beyond the planned goals?</p>
+            <i class="fas fa-user-tie mr-2"></i> Details of learning beyond the planned goals?</p>
         </div>
       </div>
       <table class="table mt-2 table-bordered border-bottom-0">
@@ -20,7 +20,7 @@
             <td>
               <div class="form-group">
                 <select class="form-control" id="exampleFormControlSelect1">
-                  <option *ngFor="let timeline of timelinesItemList">{{timeline.timelinePeriod}}</option>
+                  <option *ngFor="let selfDevelopment of selfDevelopmentItemList">{{selfDevelopment.certifications}}</option>
                 </select>
               </div>
             </td>
@@ -28,13 +28,10 @@
               <input type="text" class="form-control" name="Hours" placeholder="Devoted Hours">
             </td>
             <td>
-              <input type="text" class="form-control" name="Activity" placeholder="Activity">
-            </td>
-            <td>
               <input type="text" class="form-control" name="Details" placeholder="Details">
             </td>
             <td class="group_btn">
-              <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
+              <button class="btn btn-link" title="Edit" (click)="deleteSelfDevelopedSkills(field)">
                 <i class="fas fa-trash-alt"></i>
               </button>
             </td>
@@ -42,16 +39,15 @@
           <tr>
             <td colspan="5" class="border-0 p-0">
               <div class="col-sm text-right p-0">
-                <a class="text-dark" (click)="addRow()">
+                <a class="text-dark" (click)="addSelfDevelopedSkills()">
                   <i class="text-success fas fa-plus-square plusBtn"></i>
                 </a>
               </div>
             </td>
           </tr>
-
         </tbody>
       </table>
-
+    
     </div>
   </div>
 </div>

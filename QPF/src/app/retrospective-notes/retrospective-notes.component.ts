@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class RetrospectiveNotesComponent implements OnInit {
   fieldArray = [];
   fieldImprovementArray = [];
-  tableImprovementHeader = ["What Can be Improved", "Action Items for Improvements","Actions"];
+  tableImprovementHeader = ["What Can be Improved", "Action Items for Improvements", "Actions"];
 
-  constructor() { 
+  constructor() {
     this.fieldArray = [{}];
     this.fieldImprovementArray = [{}];
   }
@@ -28,10 +28,10 @@ export class RetrospectiveNotesComponent implements OnInit {
     }
   }
 
-  addImprovementRow(){
+  addImprovementRow() {
     this.fieldImprovementArray.push(null);
   }
-  deleteImprovementRow(data : any){
+  deleteImprovementRow(data: any) {
     let index = this.fieldImprovementArray.indexOf(data);
     if (index > -1) {
       this.fieldImprovementArray.splice(index, 1);

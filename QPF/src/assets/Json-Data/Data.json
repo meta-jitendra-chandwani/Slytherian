@@ -25,7 +25,7 @@
             "timelinePeriod": "Week : Oct 1"
         }
     ],
-    "achievements":[
+    "achievements": [
         {
             "id": 0,
             "name": "None"
@@ -41,6 +41,42 @@
         {
             "id": 3,
             "name": "Got more responsibilities"
+        }
+    ],
+    "selfDevelopment": [
+        {
+            "id": 0,
+            "certifications": "Classroom training sessions or seminars attended"
+        },
+        {
+            "id": 1,
+            "certifications": "Webinars attended"
+        },
+        {
+            "id": 2,
+            "certifications": "Technical articles read"
+        },
+        {
+            "id": 3,
+            "certifications": "Online courses completed"
+        },
+        {
+            "id": 4,
+            "certifications": "Professional books read"
+        },
+        {
+            "id": 5,
+            "certifications": "Others"
+        }
+    ],
+    "skillData": [
+        {
+            "id": 1,
+            "name": "select skill"
+        },
+        {
+            "id": 2,
+            "name": "hours of training session"
         }
     ]
 }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchCustomersComponent } from './search-customers.component';
+import { SelfDevelopmentComponent } from './self-development.component';
 
-describe('SearchCustomersComponent', () => {
-  let component: SearchCustomersComponent;
-  let fixture: ComponentFixture<SearchCustomersComponent>;
+describe('SelfDevelopmentComponent', () => {
+  let component: SelfDevelopmentComponent;
+  let fixture: ComponentFixture<SelfDevelopmentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchCustomersComponent ]
+      declarations: [ SelfDevelopmentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearchCustomersComponent);
+    fixture = TestBed.createComponent(SelfDevelopmentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
