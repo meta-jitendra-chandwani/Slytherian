@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CustomersListComponent } from '../customers-list/customers-list.component';
- 
+import { PerformanceTabViewComponent } from '../performance-tab-view/performance-tab-view.component';
+import { AppraiseDashboardComponent } from '../appraise-dashboard/appraise-dashboard.component';
+
 const routes: Routes = [
-    { path: '', redirectTo: 'customer', pathMatch: 'full' },
-    { path: 'customer', component: CustomersListComponent },
+    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+    { path: 'dashboard', component: AppraiseDashboardComponent },
+    { path: 'performance', component: PerformanceTabViewComponent }
 ];
- 
+
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
- 
+
 export class AppRoutingModule { }

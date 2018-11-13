@@ -47,11 +47,11 @@ export class AdditionalEffortsComponent implements OnInit {
         },
         error => console.log('ERROR: ' + error));
   }
-  addRow() {
+  addAdditionalEfforts() {
     let addNewTimelineObject = { selectedTimeline: null }
     this.fieldArray.push(addNewTimelineObject);
   }
-  deleteRow(data: any) {
+  deleteAdditionalEfforts(data: any) {
     debugger
     let index = this.fieldArray.indexOf(data);
     if (index > -1) {

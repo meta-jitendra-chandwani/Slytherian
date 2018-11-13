@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomerService } from '../customer.service';
-
+import { appraise } from '../appraise';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-appraise-dashboard',
   templateUrl: './appraise-dashboard.component.html',
@@ -13,7 +14,8 @@ export class AppraiseDashboardComponent implements OnInit {
 
   tableHeader = ["Years", "Quarter", "Status", "My Manager", "My Normalizer", "Publish Date", "Last Update Date"];
 
-  constructor(private customerService: CustomerService) {
+  constructor(private customerService: CustomerService, private route: ActivatedRoute,
+    private router: Router, ) {
   }
 
 
@@ -46,6 +48,13 @@ export class AppraiseDashboardComponent implements OnInit {
     let index = this.fieldArray.indexOf(data);
     if (index > -1) {
       this.fieldArray.splice(index, 1);
+    }
+  }
+
+  openQualityFeedbackForm(field: appraise) {
+    debugger
+    if (field.status === "Active") {
+      this.router.navigate['/performance']
     }
   }
 }
