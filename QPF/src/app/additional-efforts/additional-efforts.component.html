@@ -1,0 +1,61 @@
+<div id="main-block">
+  <div class="container-fluid">
+    <div class="main_block learing_table">
+
+      <div class="row">
+        <div class="col-12">
+          <p class="title">
+            <i class="fas fa-user-tie mr-2"></i> Details of additional efforts beyond the planned goals?</p>
+        </div>
+      </div>
+      <table class="table mt-2 table-bordered border-bottom-0">
+        <thead>
+          <tr>
+            <th scope="col" *ngFor="let header of tableHeader">{{header}}</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let field of fieldArray">
+            <td>
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option *ngFor="let timeline of timelinesItemList">{{timeline.timelinePeriod}}</option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <input type="text" class="form-control" name="Hours" placeholder="Devoted Hours">
+            </td>
+            <td>
+              <input type="text" class="form-control" name="Activity" placeholder="Activity">
+            </td>
+            <td>
+              <input type="text" class="form-control" name="Details" placeholder="Details">
+            </td>
+            <td class="group_btn">
+              <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" class="border-0 p-0">
+              <div class="col-sm text-right p-0">
+                <a class="text-dark" (click)="addRow()">
+                  <i class="text-success fas fa-plus-square plusBtn"></i>
+                </a>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="col-sm-12 buttons-row text-right p-0">
+        <button class="btn btn-default btn-sm" type="button">Cancel</button>
+        <button class="btn btn-success btn-sm mr-0" type="submit">Save</button>
+      </div>
+
+    </div>
+  </div>
+</div>

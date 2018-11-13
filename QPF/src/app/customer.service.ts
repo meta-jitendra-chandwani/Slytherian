@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { timelines } from './timelines';
+import { appraise } from './appraise';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -12,11 +13,15 @@ export class CustomerService {
 
   private baseUrl = 'http://localhost:8080/api/customers';
   private timeUrls = 'http://localhost:3000/timelines';
+  private appraiseUrls =  'http://localhost:3001/appraise';
   constructor(private http: HttpClient) { }
 
   getTimelines(): Observable<timelines[]> {
     debugger
     return this.http.get<timelines[]>(this.timeUrls);
+  }
+  getAppraiseData():Observable<appraise[]>{
+    return this.http.get<appraise[]>(this.appraiseUrls);
   }
 
   getCustomer(id: number): Observable<Object> {
