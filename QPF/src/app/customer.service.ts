@@ -27,15 +27,12 @@ export class CustomerService {
     return this.http.get<Skill[]>(this.urlSkill);
   }
   getTimelines(): Observable<timelines[]> {
-    debugger
     return this.http.get<timelines[]>(this.timeUrls);
   }
   getAppraiseData(): Observable<appraise[]> {
     return this.http.get<appraise[]>(this.appraiseUrls);
   }
-
   getAchievements(): Observable<achievements[]> {
-    debugger
     return this.http.get<achievements[]>(this.achievementUrls);
   }
   getSelfDevelopment(): Observable<selfDevelopment[]> {
