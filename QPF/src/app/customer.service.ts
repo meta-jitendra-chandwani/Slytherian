@@ -33,9 +33,7 @@ export class CustomerService {
   getAppraiseData(): Observable<appraise[]> {
     return this.http.get<appraise[]>(this.appraiseUrls);
   }
-
   getAchievements(): Observable<achievements[]> {
-    debugger
     return this.http.get<achievements[]>(this.achievementUrls);
   }
   getSelfDevelopment(): Observable<selfDevelopment[]> {
