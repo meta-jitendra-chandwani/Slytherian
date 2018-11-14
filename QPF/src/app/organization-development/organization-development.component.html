@@ -34,7 +34,7 @@
               <input type="text" class="form-control" name="Details" placeholder="Details">
             </td>
             <td class="group_btn">
-              <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
+              <button class="btn btn-link" title="Edit" (click)="deleteSkillRow(field)">
                 <i class="fas fa-trash-alt"></i>
               </button>
             </td>
@@ -66,7 +66,7 @@
         </thead>
 
         <tbody>
-          <tr *ngFor="let field of fieldArray">
+          <tr *ngFor="let field of recruitmentArray">
             <td>
               <div class="form-group">
 
@@ -83,7 +83,7 @@
               <input type="text" class="form-control" name="Details" placeholder="Details">
             </td>
             <td class="group_btn">
-              <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
+              <button class="btn btn-link" title="Edit" (click)="deleteRecruitmentRow(field)">
                 <i class="fas fa-trash-alt"></i>
               </button>
             </td>
@@ -91,7 +91,7 @@
           <tr>
             <td colspan="5" class="border-0 p-0">
               <div class="col-sm text-right p-0">
-                <a class="text-dark" (click)="addRow()">
+                <a class="text-dark" (click)="addRecruitmentRow()">
                   <i class="text-success fas fa-plus-square plusBtn"></i>
                 </a>
               </div>
@@ -109,12 +109,12 @@
       <table class="table mt-2 table-bordered border-bottom-0">
         <thead>
           <tr>
-            <th scope="col" *ngFor="let header of recruitmentTableHeader">{{header}}</th>
+            <th scope="col" *ngFor="let header of brandBuildingTableHeader">{{header}}</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr *ngFor="let field of fieldArray">
+          <tr *ngFor="let field of brandBuildingArray">
             <td>
               <div class="form-group">
 
@@ -131,7 +131,7 @@
               <input type="text" class="form-control" name="Details" placeholder="Details">
             </td>
             <td class="group_btn">
-              <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
+              <button class="btn btn-link" title="Edit" (click)="deleteBrandBuildingRow(field)">
                 <i class="fas fa-trash-alt"></i>
               </button>
             </td>
@@ -139,7 +139,7 @@
           <tr>
             <td colspan="5" class="border-0 p-0">
               <div class="col-sm text-right p-0">
-                <a class="text-dark" (click)="addRow()">
+                <a class="text-dark" (click)="addBrandBuildingRow()">
                   <i class="text-success fas fa-plus-square plusBtn"></i>
                 </a>
               </div>
@@ -156,12 +156,12 @@
       <table class="table mt-2 table-bordered border-bottom-0">
         <thead>
           <tr>
-            <th scope="col" *ngFor="let header of recruitmentTableHeader">{{header}}</th>
+            <th scope="col" *ngFor="let header of eventsTableHeader">{{header}}</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr *ngFor="let field of fieldArray">
+          <tr *ngFor="let field of eventsArray">
             <td>
               <div class="form-group">
 
@@ -178,7 +178,7 @@
               <input type="text" class="form-control" name="Details" placeholder="Details">
             </td>
             <td class="group_btn">
-              <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
+              <button class="btn btn-link" title="Edit" (click)="deleteEventsRow(field)">
                 <i class="fas fa-trash-alt"></i>
               </button>
             </td>
@@ -186,7 +186,7 @@
           <tr>
             <td colspan="5" class="border-0 p-0">
               <div class="col-sm text-right p-0">
-                <a class="text-dark" (click)="addRow()">
+                <a class="text-dark" (click)="addEventsRow()">
                   <i class="text-success fas fa-plus-square plusBtn"></i>
                 </a>
               </div>
@@ -194,7 +194,11 @@
           </tr>
         </tbody>
       </table>
+
+      <div class="col-sm-12 buttons-row text-right p-0">
+        <button class="btn btn-default btn-sm" type="button">Cancel</button>
+        <button class="btn btn-success btn-sm mr-0" type="submit">Save</button>
+      </div>
     </div>
   </div>
 </div>
-<!--contribution towards organization brand building section ends-->
