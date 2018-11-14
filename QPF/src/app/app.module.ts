@@ -13,6 +13,7 @@ import { RetrospectiveNotesComponent } from './retrospective-notes/retrospective
 import { SelfDevelopmentComponent } from './self-development/self-development.component';
 import { OrganizationDevelopmentComponent } from './organization-development/organization-development.component';
 import { PerformanceTabViewComponent } from './performance-tab-view/performance-tab-view.component';
+import { ReviewSummaryComponent } from './review-summary/review-summary.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PerformanceTabViewComponent } from './performance-tab-view/performance-
     RetrospectiveNotesComponent,
     SelfDevelopmentComponent,
     OrganizationDevelopmentComponent,
-    PerformanceTabViewComponent
+    PerformanceTabViewComponent,
+    ReviewSummaryComponent
   ],
   imports: [
     BrowserModule,
