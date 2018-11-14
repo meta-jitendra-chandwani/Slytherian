@@ -17,7 +17,7 @@ export class CustomerService {
 
   private baseUrl = 'http://localhost:8080/api/customers';
   private timeUrls = 'http://localhost:3000/timelines';
-  private appraiseUrls = 'http://localhost:3001/appraise';
+  private appraiseUrls = 'http://localhost:3000/appraise';
   private achievementUrls = 'http://localhost:3000/achievements';
   private selfDevelopmentUrls = 'http://localhost:3000/selfDevelopment';
   private urlSkill = 'http://localhost:3000/skillData';
