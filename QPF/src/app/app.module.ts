@@ -14,6 +14,7 @@ import { SelfDevelopmentComponent } from './self-development/self-development.co
 import { OrganizationDevelopmentComponent } from './organization-development/organization-development.component';
 import { PerformanceTabViewComponent } from './performance-tab-view/performance-tab-view.component';
 import { ReviewSummaryComponent } from './review-summary/review-summary.component';
+import { SummaryComponent } from './summary/summary.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ReviewSummaryComponent } from './review-summary/review-summary.componen
     SelfDevelopmentComponent,
     OrganizationDevelopmentComponent,
     PerformanceTabViewComponent,
-    ReviewSummaryComponent
+    ReviewSummaryComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,

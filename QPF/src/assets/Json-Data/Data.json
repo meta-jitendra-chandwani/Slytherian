@@ -116,5 +116,77 @@
             "publishDate": "1-1-2017",
             "lastUpdateDate": "1-10-2017"
         }
+    ],
+    "achievementData": [
+        {
+            "id": 0,
+            "timeline": "Week : Oct 1",
+            "achievement": "xyz",
+            "summary": "xyz",
+            "details": "xyx"
+        }
+    ],
+    "selfDevelopmentData": [
+        {
+            "id": 0,
+            "certifications": "Classroom training sessions or seminars attended",
+            "timeSpent": "xyz",
+            "details": "xyx"
+        }
+    ],
+    "skillDevelopmentData": [
+        {
+            "id": 0,
+            "skillDevelopment": "select skill",
+            "timeSpent": 1,
+            "details": "xyx"
+        }
+    ],
+    "recruitmentData": [
+        {
+            "id": 0,
+            "contribution": "xyz",
+            "timeSpent": 1,
+            "details": "xyx"
+        }
+    ],
+    "brandBuildingData": [
+        {
+            "id": 0,
+            "brand": "xyz",
+            "timeSpent": 1,
+            "details": "xyz"
+        }
+    ],
+    "organizationEventData": [
+        {
+            "id": 0,
+            "event": "xyz",
+            "timeSpent": 1,
+            "details": "xyz"
+            
+        }
+    ],
+    "additionalEffortsData": [
+        {
+            "id": 0,
+            "timeline":"Week : Oct 1",
+            "hours": 1,
+            "activity": "xyz",
+            "details": "xyz"
+        }
+    ],
+    "accomplishData": [
+        {
+            "id": 0,
+            "details": "xyz"
+        }
+    ],
+    "improvementData": [
+        {
+            "id": 0,
+            "details": "xyz",
+            "actions": "xyz" 
+        }
     ]
 }
