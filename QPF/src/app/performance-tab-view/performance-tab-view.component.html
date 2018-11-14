@@ -24,37 +24,42 @@
         <nav class="navbar navbar-inverse">
           <ul class="nav navbar-nav">
             <li>
-              <a routerLink="/achievement" class="active">
-              <i class="fas fa-trophy"></i>
-              <span>Achievement</span>
+              <a [class.active]="tabValue=='Achievement'" (click)="tabSwitch('Achievement')">
+                <i class="fas fa-trophy"></i>
+                <span>Achievement</span>
               </a>
             </li>
             <li>
-              <a routerLink="/selfDevelopment" class="">
+              <a [class.active]="tabValue=='Self'" (click)="tabSwitch('Self')">
                 <i class="fas fa-users"></i>
                 <span>Self Development</span>
               </a>
             </li>
             <li>
-              <a routerLink="/organizationDevelopment" class="">
+              <a [class.active]="tabValue=='Organization'" (click)="tabSwitch('Organization')">
                 <i class="far fa-building"></i>
                 <span>Organization Development</span>
               </a>
             </li>
             <li>
-              <a routerLink="/additionalEffort" class="">
+              <a [class.active]="tabValue=='Additional'" (click)="tabSwitch('Additional')">
                 <i class="fas fa-cart-plus"></i>
                 <span>Additional Efforts</span>
               </a>
             </li>
             <li>
-              <a routerLink="/retrospectiveNotes" class="">
+              <a [class.active]="tabValue=='Retrospective'" (click)="tabSwitch('Retrospective')">
                 <i class="fas fa-user-circle"></i>
-                <span>Retrospective</span>
+                <span>Retrospective Note</span>
               </a>
             </li>
           </ul>
         </nav>
+        <app-achievements *ngIf="tabValue=='Achievement'"></app-achievements>
+        <app-self-development *ngIf="tabValue=='Self'"></app-self-development>
+        <app-organization-development *ngIf="tabValue=='Organization'"></app-organization-development>
+        <app-additional-efforts *ngIf="tabValue=='Additional'"></app-additional-efforts>
+        <app-retrospective-notes *ngIf="tabValue=='Retrospective'"></app-retrospective-notes>
       </div>
 
 

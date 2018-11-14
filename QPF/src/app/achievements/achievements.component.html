@@ -1,54 +1,54 @@
-<div id="main-block">
-  <div class="container-fluid">
-    <div class="main_block learing_table">
-      <table class="table mt-2 table-bordered border-bottom-0">
-        <thead>
-          <tr>
-            <th scope="col" *ngFor="let header of tableHeader">{{header}}</th>
-          </tr>
-        </thead>
+<!-- <div id="main-block"> -->
+<!-- <div class="container-fluid"> -->
+<div class="main_block learing_table">
+  <table class="table mt-2 table-bordered border-bottom-0">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let header of tableHeader">{{header}}</th>
+      </tr>
+    </thead>
 
-        <tbody>
-          <tr *ngFor="let field of fieldArray">
-            <td>
-              <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option *ngFor="let timeline of timelinesItemList">{{timeline.timelinePeriod}}</option>
-                </select>
-              </div>
-            </td>
-            <td>
-              <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option *ngFor="let achievements of achievementsList">{{achievements.name}}</option>
-                </select>
-              </div>
-            </td>
-            <td>
-              <input type="text" class="form-control" name="Activity">
-            </td>
-            <td>
-              <input type="text" class="form-control" name="Details">
-            </td>
-            <td class="group_btn">
-              <button class="btn btn-link" title="Edit" (click)="deleteAchievement(field)">
-                <i class="fas fa-trash-alt"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="5" class="border-0 p-0">
-              <div class="col-sm text-right p-0">
-                <a class="text-dark" (click)="addAchievement()">
-                  <i class="text-success fas fa-plus-square plusBtn"></i>
-                </a>
-              </div>
-            </td>
-          </tr>
+    <tbody>
+      <tr *ngFor="let field of fieldArray">
+        <td>
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option *ngFor="let timeline of timelinesItemList">{{timeline.timelinePeriod}}</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option *ngFor="let achievements of achievementsList">{{achievements.name}}</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <input type="text" class="form-control" name="Activity">
+        </td>
+        <td>
+          <input type="text" class="form-control" name="Details">
+        </td>
+        <td class="group_btn">
+          <button class="btn btn-link" title="Edit" (click)="deleteAchievement(field)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="border-0 p-0">
+          <div class="col-sm text-right p-0">
+            <a class="text-dark" (click)="addAchievement()">
+              <i class="text-success fas fa-plus-square plusBtn"></i>
+            </a>
+          </div>
+        </td>
+      </tr>
 
-        </tbody>
-      </table>
+    </tbody>
+  </table>
 
-    </div>
-  </div>
+  <!-- </div> -->
 </div>
+<!-- </div> -->
