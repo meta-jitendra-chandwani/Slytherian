@@ -116,5 +116,19 @@
             "publishDate": "1-1-2017",
             "lastUpdateDate": "1-10-2017"
         }
+    ],
+    "reviewSummary":[
+        {
+            "performance":"Professional books read",
+            "description":"Professional books read",
+            "rating":"Professional books read",
+            "comment":"Professional books read"
+        },
+        {
+            "performance":"Professional books read",
+            "description":"Professional books read",
+            "rating":"Professional books read",
+            "comment":"Professional books read"
+        }
     ]
 }

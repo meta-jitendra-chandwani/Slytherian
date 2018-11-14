@@ -20,6 +20,7 @@ export class CustomerService {
   private achievementUrls = 'http://localhost:3000/achievements';
   private selfDevelopmentUrls = 'http://localhost:3000/selfDevelopment';
   private urlSkill = 'http://localhost:3000/skillData';
+  private reviewSummaryUrl='http://localhost:3000/reviewSummary';
 
   constructor(private http: HttpClient) { }
 
@@ -27,7 +28,6 @@ export class CustomerService {
     return this.http.get<Skill[]>(this.urlSkill);
   }
   getTimelines(): Observable<timelines[]> {
-    debugger
     return this.http.get<timelines[]>(this.timeUrls);
   }
   getAppraiseData(): Observable<appraise[]> {
@@ -40,5 +40,9 @@ export class CustomerService {
   }
   getSelfDevelopment(): Observable<selfDevelopment[]> {
     return this.http.get<selfDevelopment[]>(this.selfDevelopmentUrls);
+  }
+
+  getReviewSummary():Observable<any[]>{
+    return this.http.get<any[]>(this.reviewSummaryUrl);
   }
 }
