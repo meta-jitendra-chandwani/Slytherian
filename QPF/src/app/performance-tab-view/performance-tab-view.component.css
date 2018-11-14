@@ -1,0 +1,67 @@
+.indicator-table thead{
+    background: #f1f1f1;
+  }
+  .indicator-table tbody td{
+      position: relative;
+  }
+  .indicator-table select{
+    position: absolute;
+      top: 0;
+      width: 100%;
+  }
+  .indicator-table textarea{
+    position: absolute;
+      top: 0;
+      width: 100%;
+      min-height: 100%;
+      border: none !important;
+  }
+  .indicator-table tbody tr td:first-child, .indicator-table tbody tr td:nth-child(2){
+    background: #f1f1f1;
+  }
+  
+  .indicator-table .search.form-control {
+      height: 2.2rem !important;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 0;
+      border: none !important;
+  }
+  .indicator-table .input-group-prepend {
+      background: #fff !important;
+      width: 1.5rem;
+      padding: 0.7rem 0 0 0.4rem;
+      color: #ccc;
+      font-size: 0.8rem;
+  }
+  .indicator-table .navbar {
+    width: 100%;
+    padding: 0;
+  }
+  .indicator-table  ul.nav {
+    flex-direction: row;
+      width: 100%;
+      background: #f1f1f1;
+  }
+  .indicator-table ul.nav li {
+    border-right: 1px solid #fff;
+    width: 20%;
+    text-align: center;
+  }
+  .indicator-table ul.nav li:last-child {
+    border-right: none;
+  }
+  .indicator-table ul.nav li a:hover, .indicator-table ul.nav li a.active {
+    text-decoration: none;
+    background: #D5E7FF;
+    color: #177dfb;
+  }
+  .indicator-table ul.nav li i {
+    margin-right: 0.5rem;
+    /*display: none;*/
+  }
+  .indicator-table ul.nav li a {
+    padding: 1rem 0;
+      display: block;
+      color: #656565;
+  }

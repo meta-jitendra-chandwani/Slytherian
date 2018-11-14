@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomerService } from '../customer.service';
 
 @Component({
   selector: 'app-review-summary',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewSummaryComponent implements OnInit {
   summaryTableHeader=["Quarterly Performance","Description","Rating","Comments"];
-  constructor() { }
+  summaryData:any[];
+  constructor(private customerService: CustomerService) { }
 
   ngOnInit() {
+    this.getReviewSummary();
+  }
+  getReviewSummary(): any {
+    return this.customerService.getReviewSummary()
+      .subscribe((response) => { this.summaryData = response });
   }
 
 }

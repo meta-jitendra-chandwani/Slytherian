@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AppraiseDashboardComponent implements OnInit {
 
-  fieldArray = [];
+  appraisesRows: appraise[] = [];
   loader: boolean = true;
 
   tableHeader = ["Years", "Quarter", "Status", "My Manager", "My Normalizer", "Publish Date", "Last Update Date"];
@@ -26,27 +26,15 @@ export class AppraiseDashboardComponent implements OnInit {
 
   getAppraise() {
     return this.customerService.getAppraiseData().subscribe((response) => {
-      this.fieldArray = response,
-        console.log(this.fieldArray);
+      this.appraisesRows = response,
+        console.log(this.appraisesRows);
     });
   }
 
-  addRow() {
-    let addNewTimelineObject = { selectedTimeline: null }
-    this.fieldArray.push(addNewTimelineObject);
-  }
-  deleteRow(data: any) {
+  showAppraisePerformance(appraise: appraise) {
     debugger
-    let index = this.fieldArray.indexOf(data);
-    if (index > -1) {
-      this.fieldArray.splice(index, 1);
-    }
-  }
-
-  openQualityFeedbackForm(field: appraise) {
-    debugger
-    if (field.status === "Active") {
-      this.router.navigate['/performance']
+    if (appraise.status === "Active") {
+      this.router.navigate(['/performance']);
     }
   }
 }

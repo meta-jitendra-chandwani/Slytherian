@@ -16,43 +16,40 @@
         </thead>
 
         <tbody>
-          <tr *ngFor="let field of fieldArray">
+          <tr *ngFor="let appraise of appraisesRows" (click)="showAppraisePerformance(appraise)">
             <td>
               <label name="Year">
-                {{field.year}}
+                {{appraise.year}}
               </label>
             </td>
             <td>
               <label name="Quarter">
-                {{field.quarter}}
+                {{appraise.quarter}}
               </label>
             </td>
             <td>
               <label name="Status">
-                <a routerLink="/performance">
-                  {{field.status}}
-                </a>
-
+                {{appraise.status}}
               </label>
             </td>
             <td>
               <label name="Manager">
-                {{field.manager}}
+                {{appraise.manager}}
               </label>
             </td>
             <td>
               <label name="Normalizer">
-                {{field.normalizer}}
+                {{appraise.normalizer}}
               </label>
             </td>
             <td>
               <label name="PublishDate">
-                {{field.publishDate}}
+                {{appraise.publishDate}}
               </label>
             </td>
             <td>
               <label name="LastUpdateDate">
-                {{field.lastUpdateDate}}
+                {{appraise.lastUpdateDate}}
               </label>
             </td>
           </tr>
