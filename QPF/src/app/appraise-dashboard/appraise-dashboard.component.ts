@@ -31,14 +31,6 @@ export class AppraiseDashboardComponent implements OnInit {
     });
   }
 
-  deleteCustomers() {
-    this.customerService.deleteAll()
-      .subscribe(
-        data => {
-          console.log(data);
-        },
-        error => console.log('ERROR: ' + error));
-  }
   addRow() {
     let addNewTimelineObject = { selectedTimeline: null }
     this.fieldArray.push(addNewTimelineObject);

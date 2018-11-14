@@ -39,14 +39,6 @@ export class AdditionalEffortsComponent implements OnInit {
   //   return timelines.map(timeline => ({ label: timeline.timelinePeriod, value: timeline.timelinePeriod }));
   // }
 
-  deleteCustomers() {
-    this.customerService.deleteAll()
-      .subscribe(
-        data => {
-          console.log(data);
-        },
-        error => console.log('ERROR: ' + error));
-  }
   addAdditionalEfforts() {
     let addNewTimelineObject = { selectedTimeline: null }
     this.fieldArray.push(addNewTimelineObject);
