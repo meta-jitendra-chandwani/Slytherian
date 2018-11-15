@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { timelines } from './timelines';
-import { appraise } from './appraise';
+import { timelines } from './shared/_model/timelines';
+import { appraise } from './appraise-dashboard/appraise';
 import { achievements } from './achievement-names';
 import { selfDevelopment } from './selfDevelopment';
 import { Skill } from './skill';
@@ -41,7 +41,7 @@ export class CustomerService {
   private improvementDataUrl = 'http://localhost:3000/improvementData';
 
   constructor(private http: HttpClient) { }
-
+  
   getSkillName(): Observable<Skill[]> {
     return this.http.get<Skill[]>(this.urlSkill);
   }
@@ -88,5 +88,7 @@ export class CustomerService {
   getImprovementData(): Observable<ImprovementData[]> {
     return this.http.get<ImprovementData[]>(this.improvementDataUrl);
   }
+
+  
 
 }

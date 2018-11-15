@@ -1,33 +1,19 @@
-<!-- <div id="main-block">
-  <div class="container-fluid"> -->
-     <!--skill development in organization start-->
-<div class="main_block learing_table">
- 
- 
-  <app-skill-development></app-skill-development>
-  
-  <app-recruitment-contribution></app-recruitment-contribution>
- 
-  <app-organization-brand-building></app-organization-brand-building>
-
-  <app-organization-events></app-organization-events>
-
-  <!--organization of events starts here -->
-  <!-- <div class="row">
+<div class="row">
     <div class="col-12">
       <p class="title">
-        <i class="fas fa-user-tie mr-2"></i> My contribution towards organization of events?</p>
+        <i class="fas fa-user-tie mr-2"></i> My contribution towards skill development in organization?</p>
     </div>
   </div>
+
   <table class="table mt-2 table-bordered border-bottom-0">
     <thead>
       <tr>
-        <th scope="col" *ngFor="let header of eventsTableHeader">{{header}}</th>
+        <th scope="col" *ngFor="let header of skillTableHeader">{{header}}</th>
       </tr>
     </thead>
 
     <tbody>
-      <tr *ngFor="let field of eventsArray">
+      <tr *ngFor="let field of skillArray">
         <td>
           <div class="form-group">
 
@@ -44,7 +30,7 @@
           <input type="text" class="form-control" name="Details" placeholder="Details">
         </td>
         <td class="group_btn">
-          <button class="btn btn-link" title="Edit" (click)="deleteEventsRow(field)">
+          <button class="btn btn-link" title="Edit" (click)="deleteSkillRow(field)">
             <i class="fas fa-trash-alt"></i>
           </button>
         </td>
@@ -52,15 +38,11 @@
       <tr>
         <td colspan="5" class="border-0 p-0">
           <div class="col-sm text-right p-0">
-            <a class="text-dark" (click)="addEventsRow()">
+            <a class="text-dark" (click)="addSkillRow()">
               <i class="text-success fas fa-plus-square plusBtn"></i>
             </a>
           </div>
         </td>
       </tr>
     </tbody>
-  </table> -->
-  <!--organization of events ends here -->
-
- 
-</div>
+  </table>

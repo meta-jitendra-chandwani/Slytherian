@@ -16,6 +16,10 @@ import { PerformanceTabViewComponent } from './performance-tab-view/performance-
 import { ReviewSummaryComponent } from './review-summary/review-summary.component';
 import { SummaryComponent } from './summary/summary.component';
 import { SummaryTabViewComponent } from './summary-tab-view/summary-tab-view.component';
+import { SkillDevelopmentComponent } from './organization-development/skill-development/skill-development.component';
+import { RecruitmentContributionComponent } from './organization-development/recruitment-contribution/recruitment-contribution.component';
+import { OrganizationBrandBuildingComponent } from './organization-development/organization-brand-building/organization-brand-building.component';
+import { OrganizationEventsComponent } from './organization-development/organization-events/organization-events.component';
 
 
 @NgModule({
@@ -30,7 +34,11 @@ import { SummaryTabViewComponent } from './summary-tab-view/summary-tab-view.com
     PerformanceTabViewComponent,
     ReviewSummaryComponent,
     SummaryComponent,
-    SummaryTabViewComponent
+    SummaryTabViewComponent,
+    SkillDevelopmentComponent,
+    RecruitmentContributionComponent,
+    OrganizationBrandBuildingComponent,
+    OrganizationEventsComponent
   ],
   imports: [
     BrowserModule,
