@@ -1,0 +1,30 @@
+<div class="main_block learing_table">
+
+  <div class="row">
+    <div class="col-12">
+      <p class="title">Self Development</p>
+    </div>
+  </div>
+  <table class="table mt-2 table-bordered border-bottom-0">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let header of selfDevelopmentTableHeader">{{header}}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let selfDevelopment of selfDevelopmentDataItemList">
+        <td>
+          <label>{{selfDevelopment.name}}</label>
+        </td>
+        <td>
+          <label>{{selfDevelopment.timeSpent}}</label>
+        </td>
+        <td>
+          <label>{{selfDevelopment.details}}</label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

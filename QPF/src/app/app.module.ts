@@ -16,6 +16,15 @@ import { PerformanceTabViewComponent } from './performance-tab-view/performance-
 import { ReviewSummaryComponent } from './review-summary/review-summary.component';
 import { SummaryComponent } from './summary/summary.component';
 import { SummaryTabViewComponent } from './summary-tab-view/summary-tab-view.component';
+import { SummaryAchievementComponent } from './summary/summary-achievement/summary-achievement.component';
+import { SummarySelfDevelopmentComponent } from './summary/summary-self-development/summary-self-development.component';
+import { SummarySkillDevelopmentComponent } from './summary/summary-skill-development/summary-skill-development.component';
+import { SummaryRecruitmentComponent } from './summary/summary-recruitment/summary-recruitment.component';
+import { SummaryOrganizationBrandBuildingComponent } from './summary/summary-organization-brand-building/summary-organization-brand-building.component';
+import { SummaryOrganizationEventComponent } from './summary/summary-organization-event/summary-organization-event.component';
+import { SummaryAdditionalEffortsComponent } from './summary/summary-additional-efforts/summary-additional-efforts.component';
+import { SummaryAccomplishmentComponent } from './summary/summary-accomplishment/summary-accomplishment.component';
+import { SummaryImprovementComponent } from './summary/summary-improvement/summary-improvement.component';
 
 
 @NgModule({
@@ -30,7 +39,16 @@ import { SummaryTabViewComponent } from './summary-tab-view/summary-tab-view.com
     PerformanceTabViewComponent,
     ReviewSummaryComponent,
     SummaryComponent,
-    SummaryTabViewComponent
+    SummaryTabViewComponent,
+    SummaryAchievementComponent,
+    SummarySelfDevelopmentComponent,
+    SummarySkillDevelopmentComponent,
+    SummaryRecruitmentComponent,
+    SummaryOrganizationBrandBuildingComponent,
+    SummaryOrganizationEventComponent,
+    SummaryAdditionalEffortsComponent,
+    SummaryAccomplishmentComponent,
+    SummaryImprovementComponent
   ],
   imports: [
     BrowserModule,

@@ -46,27 +46,27 @@
     "selfDevelopment": [
         {
             "id": 0,
-            "certifications": "Classroom training sessions or seminars attended"
+            "name": "Classroom training sessions or seminars attended"
         },
         {
             "id": 1,
-            "certifications": "Webinars attended"
+            "name": "Webinars attended"
         },
         {
             "id": 2,
-            "certifications": "Technical articles read"
+            "name": "Technical articles read"
         },
         {
             "id": 3,
-            "certifications": "Online courses completed"
+            "name": "Online courses completed"
         },
         {
             "id": 4,
-            "certifications": "Professional books read"
+            "name": "Professional books read"
         },
         {
             "id": 5,
-            "certifications": "Others"
+            "name": "Others"
         }
     ],
     "skillData": [
@@ -135,7 +135,7 @@
         {
             "id": 0,
             "timeline": "Week : Oct 1",
-            "achievement": "xyz",
+            "name": "xyz",
             "summary": "xyz",
             "details": "xyx"
         }
@@ -143,7 +143,13 @@
     "selfDevelopmentData": [
         {
             "id": 0,
-            "certifications": "Classroom training sessions or seminars attended",
+            "name": "Classroom training sessions or seminars attended",
+            "timeSpent": "xyz",
+            "details": "xyx"
+        },
+        {
+            "id": 1,
+            "name": "Classroom training sessions or seminars attended",
             "timeSpent": "xyz",
             "details": "xyx"
         }
@@ -151,7 +157,7 @@
     "skillDevelopmentData": [
         {
             "id": 0,
-            "skillDevelopment": "select skill",
+            "name": "select skill",
             "timeSpent": 1,
             "details": "xyx"
         }
@@ -159,7 +165,7 @@
     "recruitmentData": [
         {
             "id": 0,
-            "contribution": "xyz",
+            "name": "xyz",
             "timeSpent": 1,
             "details": "xyx"
         }
@@ -167,7 +173,7 @@
     "brandBuildingData": [
         {
             "id": 0,
-            "brand": "xyz",
+            "name": "xyz",
             "timeSpent": 1,
             "details": "xyz"
         }
@@ -175,7 +181,7 @@
     "organizationEventData": [
         {
             "id": 0,
-            "event": "xyz",
+            "name": "xyz",
             "timeSpent": 1,
             "details": "xyz"
         }
