@@ -207,5 +207,39 @@
             "details": "xyz",
             "actions": "xyz"
         }
+    ],
+    "recruitmentDropDownData": [
+        {
+            "id": 1,
+            "name": "select recruitment"
+        },
+        {
+            "id": 2,
+            "name": "hours of training session"
+        }
+    ],
+    "brandBuildingDropDownData": [
+        {
+            "id": 1,
+            "name": "select brand building"
+        },
+        {
+            "id": 2,
+            "name": "other contribution to social media"
+        }
+    ],
+    "eventsDropDownData": [
+        {
+            "id": 1,
+            "name": "select Events"
+        },
+        {
+            "id": 2,
+            "name": "Sport"
+        },
+        {
+            "id": 3,
+            "name": "Badminton"
+        }
     ]
 }

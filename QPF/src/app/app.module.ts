@@ -25,6 +25,12 @@ import { SummaryOrganizationEventComponent } from './summary/summary-organizatio
 import { SummaryAdditionalEffortsComponent } from './summary/summary-additional-efforts/summary-additional-efforts.component';
 import { SummaryAccomplishmentComponent } from './summary/summary-accomplishment/summary-accomplishment.component';
 import { SummaryImprovementComponent } from './summary/summary-improvement/summary-improvement.component';
+import { SkillDevelopmentComponent } from './organization-development/skill-development/skill-development.component';
+import { RecruitmentContributionComponent } from './organization-development/recruitment-contribution/recruitment-contribution.component';
+import { OrganizationBrandBuildingComponent } from './organization-development/organization-brand-building/organization-brand-building.component';
+import { OrganizationEventsComponent } from './organization-development/organization-events/organization-events.component';
+import { RetrospectiveNotesChildOneComponent } from './retrospective-notes/retrospective-notes-child-one/retrospective-notes-child-one.component';
+import { RetrospectiveNotesChildTwoComponent } from './retrospective-notes/retrospective-notes-child-two/retrospective-notes-child-two.component';
 
 
 @NgModule({
@@ -48,7 +54,13 @@ import { SummaryImprovementComponent } from './summary/summary-improvement/summa
     SummaryOrganizationEventComponent,
     SummaryAdditionalEffortsComponent,
     SummaryAccomplishmentComponent,
-    SummaryImprovementComponent
+    SummaryImprovementComponent,
+    SkillDevelopmentComponent,
+    RecruitmentContributionComponent,
+    OrganizationBrandBuildingComponent,
+    OrganizationEventsComponent,
+    RetrospectiveNotesChildOneComponent,
+    RetrospectiveNotesChildTwoComponent
   ],
   imports: [
     BrowserModule,
