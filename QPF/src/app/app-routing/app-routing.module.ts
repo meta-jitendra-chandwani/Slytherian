@@ -7,7 +7,6 @@ import { SelfDevelopmentComponent } from '../self-development/self-development.c
 import { OrganizationDevelopmentComponent } from '../organization-development/organization-development.component';
 import { AdditionalEffortsComponent } from '../additional-efforts/additional-efforts.component';
 import { RetrospectiveNotesComponent } from '../retrospective-notes/retrospective-notes.component';
-import { SummaryComponent } from '../summary/summary.component';
 import { SummaryTabViewComponent } from '../summary-tab-view/summary-tab-view.component';
 
 const routes: Routes = [
