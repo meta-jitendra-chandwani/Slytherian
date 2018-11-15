@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomerService } from '../customer.service';
 
 @Component({
   selector: 'app-summary',
@@ -8,7 +7,7 @@ import { CustomerService } from '../customer.service';
 })
 export class SummaryComponent implements OnInit {
 
-  constructor(private customerService: CustomerService) { }
+  constructor() { }
 
   ngOnInit() {
   }
