@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { CustomerService } from '../customer.service';
-import { timelines } from '../additional-efforts/timelines';
+import { timelines } from '../shared/_model/timelines';
 
 @Component({
   selector: 'app-achievements',

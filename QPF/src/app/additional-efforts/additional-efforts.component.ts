@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { timelines } from './timelines';
-import { SharedService } from '../shared/shared.service';
+import { timelines } from '../shared/_model/timelines';
+import { SharedService } from '../shared/_service/shared.service';
 
 @Component({
   selector: 'app-additional-efforts',
