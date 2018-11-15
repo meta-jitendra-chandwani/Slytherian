@@ -16,6 +16,8 @@ import { PerformanceTabViewComponent } from './performance-tab-view/performance-
 import { ReviewSummaryComponent } from './review-summary/review-summary.component';
 import { SummaryComponent } from './summary/summary.component';
 import { SummaryTabViewComponent } from './summary-tab-view/summary-tab-view.component';
+import { RetrospectiveNotesChildOneComponent } from './retrospective-notes/retrospective-notes-child-one/retrospective-notes-child-one.component';
+import { RetrospectiveNotesChildTwoComponent } from './retrospective-notes/retrospective-notes-child-two/retrospective-notes-child-two.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { SummaryTabViewComponent } from './summary-tab-view/summary-tab-view.com
     PerformanceTabViewComponent,
     ReviewSummaryComponent,
     SummaryComponent,
-    SummaryTabViewComponent
+    SummaryTabViewComponent,
+    RetrospectiveNotesChildOneComponent,
+    RetrospectiveNotesChildTwoComponent
   ],
   imports: [
     BrowserModule,
