@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomerService } from '../customer.service';
-import { appraise } from '../appraise';
+import { appraise } from './appraise';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AppraiseDashboardService } from './appraise-dashboard.service';
 @Component({
   selector: 'app-appraise-dashboard',
   templateUrl: './appraise-dashboard.component.html',
@@ -14,7 +14,7 @@ export class AppraiseDashboardComponent implements OnInit {
 
   tableHeader = ["Years", "Quarter", "Status", "My Manager", "My Normalizer", "Publish Date", "Last Update Date"];
 
-  constructor(private customerService: CustomerService, private route: ActivatedRoute,
+  constructor(private appraiseService: AppraiseDashboardService, private route: ActivatedRoute,
     private router: Router, ) {
   }
 
@@ -25,7 +25,7 @@ export class AppraiseDashboardComponent implements OnInit {
   }
 
   getAppraise() {
-    return this.customerService.getAppraiseData().subscribe((response) => {
+    return this.appraiseService.getAppraiseData().subscribe((response) => {
       this.appraisesRows = response,
         console.log(this.appraisesRows);
     });
