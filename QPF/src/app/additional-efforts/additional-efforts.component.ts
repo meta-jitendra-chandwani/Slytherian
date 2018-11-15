@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomerService } from '../customer.service';
-import { timelines } from '../timelines';
+import { timelines } from './timelines';
+import { SharedService } from '../shared/shared.service';
 
 @Component({
   selector: 'app-additional-efforts',
@@ -16,7 +16,7 @@ export class AdditionalEffortsComponent implements OnInit {
 
   tableHeader = ["Timeline", "Hours", "Activity", "Details", "Actions"];
 
-  constructor(private customerService: CustomerService) {
+  constructor(private sharedService: SharedService) {
     this.fieldArray = [{}]
   }
 
@@ -27,7 +27,7 @@ export class AdditionalEffortsComponent implements OnInit {
   }
 
   getTimeline() {
-    return this.customerService.getTimelines().subscribe((response) => {
+    return this.sharedService.getTimelines().subscribe((response) => {
       this.timelinesItemList = response,
         console.log(this.timelinesItemList);
     });
