@@ -1,26 +1,26 @@
 <div id="main-block">
   <div class="container-fluid">
-    <div class="main_block learing_table indicator-table">
+    <div class="main-block learning-table">
 
-      <!-- <p-tabView class="nav navbar-nav indicator-table">
-        <p-tabPanel header="Achievements">
+      <p-tabView class="nav navbar-nav" >
+        <p-tabPanel header="Achievements" leftIcon="fas fa-trophy">
           <app-achievements></app-achievements>
         </p-tabPanel>
-        <p-tabPanel header="Self Development">
+        <p-tabPanel header="Self Development" leftIcon="fas fa-users">
           <app-self-development></app-self-development>
         </p-tabPanel>
-        <p-tabPanel header="Organization Development">
+        <p-tabPanel header="Organization Development" leftIcon="fas fa-building">
           <app-organization-development></app-organization-development>
         </p-tabPanel>
-        <p-tabPanel header="Additional Efforts">
+        <p-tabPanel header="Additional Efforts" leftIcon="fas fa-cart-plus">
           <app-additional-efforts></app-additional-efforts>
         </p-tabPanel>
-        <p-tabPanel header="Retrospective Note">
+        <p-tabPanel header="Retrospective Note" leftIcon="fas fa-user-circle">
           <app-retrospective-notes></app-retrospective-notes>
         </p-tabPanel>
-      </p-tabView> -->
+      </p-tabView>
 
-      <div class="col-sm p-0">
+      <!-- <div class="col-sm p-0">
         <nav class="navbar navbar-inverse">
           <ul class="nav navbar-nav">
             <li>
@@ -60,7 +60,7 @@
         <app-organization-development *ngIf="tabValue=='Organization'"></app-organization-development>
         <app-additional-efforts *ngIf="tabValue=='Additional'"></app-additional-efforts>
         <app-retrospective-notes *ngIf="tabValue=='Retrospective'"></app-retrospective-notes>
-      </div>
+      </div> -->
 
 
       <div class="col-sm-12 buttons-row text-right p-0">
