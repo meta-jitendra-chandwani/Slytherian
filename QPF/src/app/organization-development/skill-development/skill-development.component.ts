@@ -28,5 +28,11 @@ export class SkillDevelopmentComponent implements OnInit {
   {
     this.skillArray.push(null);
   }
+  deleteSkillRow(data: any) {
+    let index = this.skillArray.indexOf(data);
+    if (index > -1) {
+      this.skillArray.splice(index, 1);
+    }
+  }
 
 }

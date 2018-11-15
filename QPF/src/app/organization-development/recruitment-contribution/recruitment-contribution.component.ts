@@ -22,4 +22,14 @@ export class RecruitmentContributionComponent implements OnInit {
     return this.recruitmentService.getRecruitmentName()
       .subscribe((recruitments) => { this.recruitments = recruitments });
   }
+  addRecruitmentRow()
+  {
+    this.recruitmentArray.push(null);
+  }
+  deleteRecruitmentRow(data: any) {
+    let index = this.recruitmentArray.indexOf(data);
+    if (index > -1) {
+      this.recruitmentArray.splice(index, 1);
+    }
+  }
 }

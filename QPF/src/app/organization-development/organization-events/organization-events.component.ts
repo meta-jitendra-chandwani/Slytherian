@@ -22,5 +22,16 @@ export class OrganizationEventsComponent implements OnInit {
     return this.organizationEventsService.getEventName()
       .subscribe((organizationEvent) => { this.organizationEvent = organizationEvent });
   }
+  addEventsRow()
+  {
+    this.eventsArray.push(null);
+  }
+  deleteEventsRow(data: any) {
+    let index = this.eventsArray.indexOf(data);
+    if (index > -1) {
+      this.eventsArray.splice(index, 1);
+    }
+  }
+
  
 }

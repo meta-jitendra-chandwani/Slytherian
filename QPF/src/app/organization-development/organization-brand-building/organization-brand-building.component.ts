@@ -23,5 +23,15 @@ export class OrganizationBrandBuildingComponent implements OnInit {
     return this.organizationBrandBuildingService.getBrandBuildingName()
       .subscribe((brandBuilding) => { this.brandBuilding = brandBuilding });
   }
+  addBrandBuildingRow()
+  {
+    this.brandBuildingArray.push(null);
+  }
+  deleteBrandBuildingRow(data: any) {
+    let index = this.brandBuildingArray.indexOf(data);
+    if (index > -1) {
+      this.brandBuildingArray.splice(index, 1);
+    }
+  }
 
 }
