@@ -531,13 +531,13 @@ body{
       width: calc(100% - 306px);
       overflow-x: hidden;
   }
-  .main_block{
+  .main-block{
       max-height: calc(100vh - 62px);
       overflow-y: auto;
       margin-top: 25px;
       padding: 0 15px;
   }
-  .main_block .title{
+  .main-block .title{
       font-size: 1rem;
       color: #177dfb;
       font-weight: 600;
@@ -951,7 +951,7 @@ body{
   .block-ellipsis > div {
     display: inline-block;
   }
-  .learing_table table select, .learing_table table input{
+  .learning-table table select, .learning-table table input{
     border: 0 !important;
   }
   .addBtn {
