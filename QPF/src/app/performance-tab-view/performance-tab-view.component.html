@@ -30,7 +30,7 @@
               </a>
             </li>
             <li>
-              <a [class.active]="tabValue=='Self'" (click)="tabSwitch('Self')">
+              <a [class.active]="tabValue=='SelfDevelopment'" (click)="tabSwitch('SelfDevelopment')">
                 <i class="fas fa-users"></i>
                 <span>Self Development</span>
               </a>
@@ -56,7 +56,7 @@
           </ul>
         </nav>
         <app-achievements *ngIf="tabValue=='Achievement'"></app-achievements>
-        <app-self-development *ngIf="tabValue=='Self'"></app-self-development>
+        <app-self-development *ngIf="tabValue=='SelfDevelopment'"></app-self-development>
         <app-organization-development *ngIf="tabValue=='Organization'"></app-organization-development>
         <app-additional-efforts *ngIf="tabValue=='Additional'"></app-additional-efforts>
         <app-retrospective-notes *ngIf="tabValue=='Retrospective'"></app-retrospective-notes>
