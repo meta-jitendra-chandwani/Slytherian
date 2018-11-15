@@ -1,0 +1,31 @@
+<div id="main-block">
+  <div class="container-fluid">
+    <div class="main_block learing_table indicator-table">
+      <div class="col-sm p-0">
+        <nav class="navbar navbar-inverse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a [class.active]="tabValue=='Summary'" (click)="tabSwitch('Summary')">
+                <i class="fas fa-smile"></i>
+                <span>Summary</span>
+              </a>
+            </li>
+            <li>
+              <a [class.active]="tabValue=='ReviewSummary'" (click)="tabSwitch('ReviewSummary')">
+                <i class="far fa-surprise"></i>
+                <span>Review Summary</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <app-summary *ngIf="tabValue=='Summary'"></app-summary>
+        <app-review-summary *ngIf="tabValue=='ReviewSummary'"></app-review-summary>>
+      </div>
+
+
+      <div class="col-sm-12 buttons-row text-right p-0">
+        <button class="btn btn-primary btn-sm" type="button" routerLink="/">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
