@@ -35,8 +35,9 @@ export class AppraiseDashboardComponent implements OnInit {
     debugger
     if (appraise.status === "Active") {
       this.router.navigate(['/performance']);
-      // this.router.navigate(['/summary']);
-
+    }
+    else if(appraise.status === "Completed"){
+      this.router.navigate(['/summary']);
     }
   }
 }
