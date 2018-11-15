@@ -1,7 +1,7 @@
 export class AchievementData{
     id: number;
     timeline: string;
-    achievement: string;
+    name: string;
     summary: string;
     details: string;
 }

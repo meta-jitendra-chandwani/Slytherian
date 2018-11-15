@@ -1,6 +1,6 @@
 export class BrandBuildingData{
     id: number;
-    brand: string;
+    name: string;
     timeSpent: number;
     details: string;
 }

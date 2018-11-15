@@ -1,0 +1,33 @@
+<div class="main_block learing_table">
+
+  <div class="row">
+    <div class="col-12">
+      <p class="title">Additional Efforts</p>
+    </div>
+  </div>
+  <table class="table mt-2 table-bordered border-bottom-0">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let header of additionalEffortsTableHeader">{{header}}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let additionalEfforts of additionalEffortsDataItemList">
+        <td>
+          <label>{{additionalEfforts.timeline}}</label>
+        </td>
+        <td>
+          <label>{{additionalEfforts.hours}}</label>
+        </td>
+        <td>
+          <label>{{additionalEfforts.activity}}</label>
+        </td>
+        <td>
+          <label>{{additionalEfforts.details}}</label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

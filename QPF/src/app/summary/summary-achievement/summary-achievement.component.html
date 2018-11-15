@@ -1,0 +1,33 @@
+<div class="main_block learing_table">
+
+  <div class="row">
+    <div class="col-12">
+      <p class="title">Achievements</p>
+    </div>
+  </div>
+  <table class="table mt-2 table-bordered border-bottom-0">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let header of achievementTableHeader">{{header}}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let achievement of achievementDataItemList">
+        <td>
+          <label>{{achievement.timeline}}</label>
+        </td>
+        <td>
+          <label>{{achievement.name}}</label>
+        </td>
+        <td>
+          <label>{{achievement.summary}}</label>
+        </td>
+        <td>
+          <label>{{achievement.details}}</label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

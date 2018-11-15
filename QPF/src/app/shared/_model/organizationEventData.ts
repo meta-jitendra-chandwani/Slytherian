@@ -1,6 +1,6 @@
 export class OrganizationEventData{
     id: number;
-    event: string;
+    name: string;
     timeSpent: number;
     details: string;
 }

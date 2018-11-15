@@ -1,6 +1,6 @@
 export class RecruitmentData{
     id: number;
-    contribution: string;
+    name: string;
     timeSpent: number;
     details: string;
 }

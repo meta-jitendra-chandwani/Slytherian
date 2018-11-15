@@ -1,4 +1,4 @@
 export class selfDevelopment{
     id: number;
-    certifications: string;
+    name: string;
 }
