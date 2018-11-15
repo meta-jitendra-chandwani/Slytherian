@@ -15,6 +15,7 @@ import { OrganizationDevelopmentComponent } from './organization-development/org
 import { PerformanceTabViewComponent } from './performance-tab-view/performance-tab-view.component';
 import { ReviewSummaryComponent } from './review-summary/review-summary.component';
 import { SummaryComponent } from './summary/summary.component';
+import { SummaryTabViewComponent } from './summary-tab-view/summary-tab-view.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { SummaryComponent } from './summary/summary.component';
     OrganizationDevelopmentComponent,
     PerformanceTabViewComponent,
     ReviewSummaryComponent,
-    SummaryComponent
+    SummaryComponent,
+    SummaryTabViewComponent
   ],
   imports: [
     BrowserModule,
