@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-
-import { CustomerService } from '../customer.service';
 import { timelines } from '../shared/_model/timelines';
+import { AchievementsService } from './achievements.service';
+import { SharedService } from '../shared/_service/shared.service';
 
 @Component({
   selector: 'app-achievements',
@@ -26,7 +25,7 @@ export class AchievementsComponent implements OnInit {
 
   tableHeader = ["Timeline", "My Achievement", "Summary", "Details", "Action"];
 
-  constructor(private customerService: CustomerService) {
+  constructor(private achievementsService: AchievementsService, private sharedService: SharedService) {
     this.fieldArray = [{}]
   }
   show(value: string) {
@@ -39,16 +38,14 @@ export class AchievementsComponent implements OnInit {
   }
 
   getTimeline() {
-    return this.customerService.getTimelines().subscribe((response) => {
-      this.timelinesItemList = response,
-      console.log(this.timelinesItemList);
+    return this.sharedService.getTimelines().subscribe((response) => {
+      this.timelinesItemList = response;
     });
   }
 
   getAchievements() {
-    return this.customerService.getAchievements().subscribe((response) => {
-      this.achievementsList = response,
-      console.log(this.achievementsList);
+    return this.achievementsService.getAchievements().subscribe((response) => {
+      this.achievementsList = response;
     });
   }
 

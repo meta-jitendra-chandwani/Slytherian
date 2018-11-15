@@ -1,4 +1,4 @@
-export class achievements {
+export class AchievementNames{
     id: number;
     name: string;
 }

@@ -20,6 +20,8 @@ import { SkillDevelopmentComponent } from './organization-development/skill-deve
 import { RecruitmentContributionComponent } from './organization-development/recruitment-contribution/recruitment-contribution.component';
 import { OrganizationBrandBuildingComponent } from './organization-development/organization-brand-building/organization-brand-building.component';
 import { OrganizationEventsComponent } from './organization-development/organization-events/organization-events.component';
+import { RetrospectiveNotesChildOneComponent } from './retrospective-notes/retrospective-notes-child-one/retrospective-notes-child-one.component';
+import { RetrospectiveNotesChildTwoComponent } from './retrospective-notes/retrospective-notes-child-two/retrospective-notes-child-two.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { OrganizationEventsComponent } from './organization-development/organiza
     SkillDevelopmentComponent,
     RecruitmentContributionComponent,
     OrganizationBrandBuildingComponent,
-    OrganizationEventsComponent
+    OrganizationEventsComponent,
+    RetrospectiveNotesChildOneComponent,
+    RetrospectiveNotesChildTwoComponent
   ],
   imports: [
     BrowserModule,
