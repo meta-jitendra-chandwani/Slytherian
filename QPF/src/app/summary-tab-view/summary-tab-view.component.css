@@ -44,5 +44,8 @@ border: 0;
 background: #d5e7ff;
 }
 :host >>> .ui-corner-top{
-border-radius: 0;
+  border-radius: 0;
+}
+:host >>> .ui-tabview .ui-tabview-panels{
+  border:0;
 }

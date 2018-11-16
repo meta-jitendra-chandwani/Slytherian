@@ -46,3 +46,6 @@
 :host >>> .ui-corner-top{
   border-radius: 0;
 }
+:host >>> .ui-tabview .ui-tabview-panels{
+  border:0;
+}
