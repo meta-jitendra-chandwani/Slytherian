@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { timelines } from '../shared/_model/timelines';
 import { AchievementsService } from './achievements.service';
 import { SharedService } from '../shared/_service/shared.service';
-import { AchievementData } from '../achievementData';
+import { AchievementData } from '../shared/_model/achievementData';
 
 @Component({
   selector: 'app-achievements',
