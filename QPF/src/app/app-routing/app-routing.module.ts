@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PerformanceTabViewComponent } from '../performance-tab-view/performance-tab-view.component';
 import { AppraiseDashboardComponent } from '../appraise-dashboard/appraise-dashboard.component';
-import { AchievementsComponent } from '../achievements/achievements.component';
-import { SelfDevelopmentComponent } from '../self-development/self-development.component';
-import { OrganizationDevelopmentComponent } from '../organization-development/organization-development.component';
-import { AdditionalEffortsComponent } from '../additional-efforts/additional-efforts.component';
-import { RetrospectiveNotesComponent } from '../retrospective-notes/retrospective-notes.component';
 import { SummaryTabViewComponent } from '../summary-tab-view/summary-tab-view.component';
+import { AchievementsComponent } from '../performance-tab-view/achievements/achievements.component';
+import { SelfDevelopmentComponent } from '../performance-tab-view/self-development/self-development.component';
+import { OrganizationDevelopmentComponent } from '../performance-tab-view/organization-development/organization-development.component';
+import { AdditionalEffortsComponent } from '../performance-tab-view/additional-efforts/additional-efforts.component';
+import { RetrospectiveNotesComponent } from '../performance-tab-view/retrospective-notes/retrospective-notes.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' },

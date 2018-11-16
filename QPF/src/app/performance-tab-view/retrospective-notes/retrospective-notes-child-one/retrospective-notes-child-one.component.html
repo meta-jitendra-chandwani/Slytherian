@@ -1,0 +1,33 @@
+<div class="main_block learing_table">
+
+  <div class="row">
+    <div class="col-12">
+      <p class="title">
+        <i class="fas fa-user-tie mr-2"></i>What Went Well</p>
+    </div>
+  </div>
+
+  <table class="table mt-2 table-bordered border-bottom-0">
+    <tbody>
+      <tr *ngFor="let field of fieldArray">
+        <td>
+          <input type="text" class="form-control" name="Hours" placeholder="Text">
+        </td>
+        <td class="group_btn">
+          <button class="btn btn-link" title="Edit" (click)="deleteRow(field)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="border-0 p-0">
+          <div class="col-sm text-right p-0">
+            <a class="text-dark" (click)="addRow()">
+              <i class="text-success fas fa-plus-square plusBtn"></i>
+            </a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
