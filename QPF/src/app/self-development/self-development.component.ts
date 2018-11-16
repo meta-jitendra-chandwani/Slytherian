@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomerService } from '../customer.service';
 import { Customer } from '../customer';
 import { Observable } from 'rxjs';
-import { selfDevelopment } from '../selfDevelopment';
+import { selfDevelopment } from './selfDevelopment';
+import { SelfDevelopmentService } from './self-development.service';
 
 @Component({
   selector: 'app-self-development',
@@ -11,15 +11,15 @@ import { selfDevelopment } from '../selfDevelopment';
 })
 export class SelfDevelopmentComponent implements OnInit {
 
-  selfDevelopmentItemList: any[];
+  selfDevelopmentItemList: selfDevelopment[];
   selectedDevelopment: selfDevelopment = null;
   fieldArray = [];
 
   customers: Observable<Customer[]>;
 
-  tableHeader = ["Self Development", "Time Spent in Hours", "Details", ""];
+  tableHeader = ["Self Development", "Time Spent in Hours", "Details", "Actions"];
 
-  constructor(private customerService: CustomerService) {
+  constructor(private selfDevelopment: SelfDevelopmentService) {
     this.fieldArray = [{}]
   }
 
@@ -28,7 +28,7 @@ export class SelfDevelopmentComponent implements OnInit {
   }
 
   getSelfDevelopment() {
-    return this.customerService.getSelfDevelopment().subscribe((response) => {
+    return this.selfDevelopment.getSelfDevelopment().subscribe((response) => {
       this.selfDevelopmentItemList = response
         // console.log(this.selfDevelopmentItemList);
 

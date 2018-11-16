@@ -1,6 +1,6 @@
 export class SkillDevelopmentData{
     id: number;
-    skillDevelopment: string;
+    name: string;
     timeSpent: number;
     details: string;
 }

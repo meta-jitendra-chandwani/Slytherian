@@ -1,6 +1,6 @@
 export class SelfDevelopmentData{
     id: number;
-    certifications: string;
+    name: string;
     timeSpent: number;
     details: string;
 }
