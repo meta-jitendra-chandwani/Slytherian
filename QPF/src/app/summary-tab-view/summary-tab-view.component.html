@@ -1,7 +1,16 @@
 <div id="main-block">
   <div class="container-fluid">
-    <div class="main_block learing_table indicator-table">
-      <div class="col-sm p-0">
+    <div class="main-block learing-table indicator-table">
+        <p-tabView class="nav navbar-nav" >
+            <p-tabPanel header="Summary" leftIcon="fas fa-smile">
+                <app-summary></app-summary>
+            </p-tabPanel>
+            <p-tabPanel header="Review Summary" leftIcon="fas fa-surprise">
+                <app-review-summary></app-review-summary>
+            </p-tabPanel>
+          </p-tabView>
+
+      <!-- <div class="col-sm p-0">
         <nav class="navbar navbar-inverse">
           <ul class="nav navbar-nav">
             <li>
@@ -20,7 +29,7 @@
         </nav>
         <app-summary *ngIf="tabValue=='Summary'"></app-summary>
         <app-review-summary *ngIf="tabValue=='ReviewSummary'"></app-review-summary>>
-      </div>
+      </div> -->
 
 
       <div class="col-sm-12 buttons-row text-right p-0">

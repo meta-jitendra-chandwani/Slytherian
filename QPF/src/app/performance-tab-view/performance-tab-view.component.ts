@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AchievementData } from '../shared/_model/achievementData';
 
 @Component({
   selector: 'app-performance-tab-view',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerformanceTabViewComponent implements OnInit {
   tabValue: string = "Achievement";
+  @ViewChild(AchievementData)
+  private achievement: AchievementData;
   constructor() { }
 
   ngOnInit() {
@@ -15,5 +18,7 @@ export class PerformanceTabViewComponent implements OnInit {
     debugger
     this.tabValue = tabValue;
   }
-
+  saveDetails(){
+    alert('dsggsdfgd');
+  }
 }

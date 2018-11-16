@@ -32,7 +32,6 @@ export class AppraiseDashboardComponent implements OnInit {
   }
 
   showAppraisePerformance(appraise: appraise) {
-    debugger
     if (appraise.status === "Active") {
       this.router.navigate(['/performance']);
     }

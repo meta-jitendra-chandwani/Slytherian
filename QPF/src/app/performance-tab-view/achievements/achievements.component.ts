@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AchievementsService } from './achievements.service';
 import { timelines } from '../../shared/_model/timelines';
 import { SharedService } from '../../shared/_service/shared.service';
+import { AchievementData } from '../../shared/_model/achievementData';
 
 @Component({
   selector: 'app-achievements',
@@ -10,7 +11,9 @@ import { SharedService } from '../../shared/_service/shared.service';
 })
 export class AchievementsComponent implements OnInit {
 
-  timelinesItemList: any[] ;
+  @Input() achievement = new AchievementData();
+
+  timelinesItemList: any[];
   selectedTimeline: timelines = null;
   selectedValues: any;
   achievementsList: any[];
@@ -60,5 +63,7 @@ export class AchievementsComponent implements OnInit {
       this.fieldArray.splice(index, 1);
     }
   }
-
+  getAchieve(){
+    return this.achievement;
+  }
 }
