@@ -12,23 +12,23 @@
       <tr *ngFor="let field of fieldArray">
         <td>
           <div class="form-group">
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="exampleFormControlSelect1" name="timeline" [(ngModel)]="achievement.timeline">
               <option *ngFor="let timeline of timelinesItemList">{{timeline.timelinePeriod}}</option>
             </select>
           </div>
         </td>
         <td>
           <div class="form-group">
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="exampleFormControlSelect1" name="achievement" [(ngModel)] = "achievement.achievement">
               <option *ngFor="let achievements of achievementsList">{{achievements.name}}</option>
             </select>
           </div>
         </td>
         <td>
-          <input type="text" class="form-control" name="Activity">
+          <input type="text" class="form-control" name="activity" [(ngModel)]="achievement.summary">
         </td>
         <td>
-          <input type="text" class="form-control" name="Details">
+          <input type="text" class="form-control" name="Details" [(ngModel)]="achievement.details">
         </td>
         <td class="group_btn">
           <button class="btn btn-link" title="Edit" (click)="deleteAchievement(field)">
